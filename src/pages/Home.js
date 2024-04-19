@@ -1,16 +1,19 @@
-import React from 'react'
-import HeroSection from '../components/HeroSection'
+import React from "react";
+import HeroSection from "../components/HeroSection";
+import Services from "../components/Services";
+import Trusted from "../components/Trusted";
 
 const Home = () => {
   const data = {
-    name: "Star Shopping"
-  }
+    name: "Star Shopping",
+  };
   return (
-    <div className=''>
-        <HeroSection myData={data}/>
+    <div className="">
+      <HeroSection myData={data} />
+      <Services />
+      <Trusted />
     </div>
-  )
-}
+  );
+};
 
-
-export default Home
+export default Home;
