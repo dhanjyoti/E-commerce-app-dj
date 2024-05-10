@@ -1,8 +1,13 @@
-import React from 'react'
+import { useProductContext } from "../utils/productContext";
+
 
 const Products = () => {
+  const {myName} = useProductContext();
+
   return (
-    <div>Products</div>
+    <div>
+      {myName}
+    </div>
   )
 }
 

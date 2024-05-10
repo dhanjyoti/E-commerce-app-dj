@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaInstagram } from "react-icons/fa";
 import { LuTwitter } from "react-icons/lu";
 import { FaFacebookF } from "react-icons/fa";
@@ -12,14 +12,14 @@ const Footer = () => {
           <h3>Ready to get started?</h3>
           <h3>Talk to us today</h3>
         </div>
-        <div>
-          <Link
-            className="bg-[#5a04e5] text-white py-2 px-4 rounded-sm"
+       
+          <NavLink
+            className="bg-[#5a04e5] text-white py-2 px-4 rounded-sm md:w-[116px] w-[132px]"
             to="./contact"
           >
             Get Started
-          </Link>
-        </div>
+          </NavLink>
+     
       </div>
 
       <div className="bg-[#0818A8] text-white w-full md:pt-16">
